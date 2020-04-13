@@ -1,110 +1,113 @@
 <html>
   <head>
-  	
+    
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 
     <style>
       #bloc_page {
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: center;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
       }
       
       .default_card {
-		  font-family: 'Nunito', sans-serif;	  
-		  width: 320px;
-		  height: 225px;
-		  position: relative;
-		  display: inline-block;
-		  margin-left:3%;
-		  margin: 5px;
-		  /* border-radius: 8px;	 */
+	  font-family: 'Nunito', sans-serif;
+	  font-size: 20px;
+	  width: 320px;
+	  height: 225px;
+	  position: relative;
+	  display: inline-block;
+	  margin-left:3%;
+	  margin: 15px;
       }
 
       .front {
-		  background: url("img/logo-PF.jpg");
-		  background-repeat: no-repeat;
-		  border: solid 2px grey;
-		  box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		  backface-visibility: hidden;
-	    transform-style: preserve-3d;
-	    position: absolute;
-	    z-index: 1;
-	    height: 100%;
-	    width: 100%;
-	    transition: all 0.5s ease-out 0s;
+	  background: url("img/logo-PF.jpg");
+	  background-repeat: no-repeat;
+	  border: solid 2px grey;
+	  box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  backface-visibility: hidden;
+	  transform-style: preserve-3d;
+	  position: absolute;
+	  z-index: 1;
+	  height: 100%;
+	  width: 100%;
+	  transition: all 0.5s ease-out 0s;
       }
       
       .back {
-		  background-color: #DCDCDC;
-		  text-align: center;
-		  border: solid 2px grey; 
-		  box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		      backface-visibility: hidden;
-    transform-style: preserve-3d;
-    position: relative;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    transform: rotateY(-180deg);
-    transition: all 0.5s ease-out 0s
+	  background-color: #DCDCDC;
+	  text-align: center;
+	  border: solid 2px grey; 
+	  box-shadow: 0 14px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  backface-visibility: hidden;
+	  transform-style: preserve-3d;
+	  position: relative;
+	  z-index: 0;
+	  height: 100%;
+	  width: 100%;
+	  transform: rotateY(-180deg);
+	  transition: all 0.5s ease-out 0s;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
       }
     </style>
   </head>
   <body>
     <div id="bloc_page">
       <div class="default_card" onclick="flip(this)"> 
-		<div class="front"> 
-		</div> 
-		<div class="back">
-		  Donnez au moins cinq besoins <br>que vous satisfaites à travers <br>l’un de vos hobbys.<br>
-		</div>
+	<div class="front"> 
+	</div> 
+	<div class="back">
+	  Donnez au moins cinq besoins <br>que vous satisfaites à travers <br>l’un de vos hobbys.<br>
+	</div>
       </div>
       
       <div class="default_card" onclick="flip(this)"> 
-		<div class="front"> 
-		</div> 
-		<div class="back">
-		  Quelle est l'action qui nourit le plus de besoins pour vous ?<br>
-		</div>
+	<div class="front"> 
+	</div> 
+	<div class="back">
+	  Quelle est l'action qui nourit le plus de besoins pour vous ?<br>
+	</div>
       </div>
       
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
 	  D'après vous, quels sont les besoins satisfaits par la personne qui vous aurait cambriolé<br>
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
 	  Essayez de trouver une action qui<br>ne pourrait satisfaire qu’un seul<br>besoin.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
 	  Quel est le besoin que vous avez le<br>plus de mal à satisfaire pour l’instant<br>dans votre vie ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
 	  Quel est le besoin que vous avez le<br>plus facilement satisfait au cours de<br>votre existence ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
 	  Quel est le plus bel exemple<br>d’autonomie que vous avez pu<br>incarner ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -113,7 +116,7 @@
 	  en ce moment.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -122,7 +125,7 @@
 	  en ce moment.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -131,7 +134,7 @@
 	  besoins satisfaits dans ce rapport.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -139,7 +142,7 @@
 	  de sécurité ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -148,7 +151,7 @@
 	  d’appartenance ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -156,7 +159,7 @@
 	  besoin de beauté ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -164,7 +167,7 @@
 	  satisfaites en jouant à ce jeu.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -173,7 +176,7 @@
 	  moment, en jouant à ce jeu ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -183,7 +186,7 @@
 	  permet de remplir.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -194,7 +197,7 @@
 	  satisfaites en ne faisant rien.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -205,7 +208,7 @@
 	  motivent et exprimez ceux-ci.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -216,7 +219,7 @@
 	  motivent et exprimez ceux-ci.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -225,7 +228,7 @@
 	  professionnelle.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -236,7 +239,7 @@
 	  exemple vécu.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -247,7 +250,7 @@
 	  faire entendre.
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -255,7 +258,7 @@
 	  de créativité ?
 	</div>
       </div>
-      <div class="default_card"> 
+      <div class="default_card" onclick="flip(this)"> 
 	<div class="front"> 
 	</div> 
 	<div class="back">
@@ -264,17 +267,17 @@
 	</div>
       </div>
       <script>
-      		function flip (elemWhereIClicked) {
-      			if (elemWhereIClicked.classList.contains('fliped')) {
-      				elemWhereIClicked.querySelector('.front').style.transform = "rotateY(0deg)"
-	      			elemWhereIClicked.querySelector('.back').style.transform = "rotateY(-180deg)"
-	      			elemWhereIClicked.classList.remove('fliped')
-      			} else {
-	      			elemWhereIClicked.querySelector('.front').style.transform = "rotateY(180deg)"
-	      			elemWhereIClicked.querySelector('.back').style.transform = "rotateY(0deg)"
-	      			elemWhereIClicked.classList.add('fliped')
-      			}
-      		}
+      	function flip (elemWhereIClicked) {
+      	    if (elemWhereIClicked.classList.contains('fliped')) {
+      		elemWhereIClicked.querySelector('.front').style.transform = "rotateY(0deg)"
+	      	elemWhereIClicked.querySelector('.back').style.transform = "rotateY(-180deg)"
+	      	elemWhereIClicked.classList.remove('fliped')
+      	    } else {
+	      	elemWhereIClicked.querySelector('.front').style.transform = "rotateY(180deg)"
+	      	elemWhereIClicked.querySelector('.back').style.transform = "rotateY(0deg)"
+	      	elemWhereIClicked.classList.add('fliped')
+      	    }
+      	}
       </script>
   </body>
 </html>
